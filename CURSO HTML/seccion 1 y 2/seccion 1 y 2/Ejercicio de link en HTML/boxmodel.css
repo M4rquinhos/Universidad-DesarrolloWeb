@@ -1,0 +1,17 @@
+body {
+    background-color: #eee;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: white;
+    background-color: crimson;
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 50px;
+    text-align: center;
+}

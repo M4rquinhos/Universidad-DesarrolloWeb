@@ -1,0 +1,42 @@
+h1{
+    color:#ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ced4da;
+}
+
+
+.caja{
+    padding: 5px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    float: left;
+}
+
+.caja.serif{
+    background-color: #5a189a;
+}
+
+.fuente-roboto{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-size: 16px;
+}
+
+.fuente-roboto-corregida{
+    font: italic small-caps bolder 20px 'Roboto', sans-serif;
+}
+
+.fuente-times{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bolder;
+}

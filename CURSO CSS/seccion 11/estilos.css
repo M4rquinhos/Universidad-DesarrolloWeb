@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+}
+
+.rojo{
+    border: 10px solid firebrick;
+    border-radius: 5px;
+}
+
+.naranja{
+    border: 10px solid orangered;
+    border-radius: 5px;
+}
+
+.rosa{
+    border: 10px solid mediumvioletred;
+    border-radius: 5px;
+}
+
+.amarillo{
+    border: 10px solid gold;
+    border-radius: 5px;
+}
+
+.azul{
+    border: 10px solid steelblue;
+    border-radius: 5px;
+}

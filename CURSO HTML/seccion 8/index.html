@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+
+    <form action="mi_servidor" method="POST" target="_self">
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" required="true"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email" required="true"><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad" required="true" min="1" max="100"><br>
+
+            <label>Genero:</label><br>
+            <input type="radio" name="genero" value="masculino" id="masculino">Masculino<br>
+            <input type="radio" name="genero" value="femenino" id="femenino">Femenino<br>
+            <input type="radio" name="genero" value="otro" id="otro">Otro<br>
+
+            <label> Genero de musica favorita:</label><br>
+            <input type="checkbox" name="musica" value="rock" id="rock">Rock<br>
+            <input type="checkbox" name="musica" value="pop" id="pop">Pop<br>
+            <input type="checkbox" name="musica" value="jazz" id="jazz">Jazz<br>
+            <input type="checkbox" name="musica" value="reggae" id="reggae">Reggae<br>
+
+            <label for="auto">Marca de auto favorita:</label><br>
+            <select name="auto" id="auto">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select><br>
+
+            <labelc for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="2">Este es un comentario</textarea><br>
+
+            <label for="password">Constraseña:</label><br>
+            <input type="password" name="password" id="password" placeholder="Escribe tu contraseña" required="true"><br>
+
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar sin validar" formnovalidate>
+            <input type="reset" value="Limpiar formulario">
+        </fieldset>
+    </form>
+
+</body>
+</html>
