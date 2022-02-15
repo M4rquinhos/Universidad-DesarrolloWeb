@@ -41,3 +41,10 @@ console.log(nombrecompleto);
 // 3. No puede contener caracteres especiales excepto $nombreDeVariable
 // 4. No puede contener guiones bajos
 // 5. No puede contener guiones medios
+// 6. No puede contener palabras reservadas
+
+let a1nombreCompleto;
+let _nombreCompleto;
+let $nombreCompleto;
+// let 1nombreCompleto; 
+
