@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo" >Manejo del DOM con JavaScript</h1>
+    <!-- <button onclick="mostrar()">Mostrar</button> -->
+    <br>
+    <form action="" id="form">
+        Nombre:  <input type="text" name="nombre" id="nombre" >
+        <br>
+        Apellido: <input type="text" name="apellido" id="apellido" >
+    </form>
+    <br>
+    <div onmouseover="cambiarColor(this)">asdasda</div>
+    <!-- <img id="imagen" src="javascript.png" alt=""> -->
+    <!-- <div id="mostrar"></div> -->
+
+
+    <script>
+        // document.write("<h3>Saludos desde JavaScript</h3>");
+
+        // function mostrar() {
+            // document.write("Adios madafaker");
+            // document.getElementById('titulo').innerHTML = "Nuevo Titulo";
+            // document.getElementById('imagen').src = 'html5.png';
+            // document.getElementById('titulo').style.color = 'blue';
+        // }
+
+        // function cambiarTexto(titulo) {
+        //     titulo.innerHTML = "Cambiamos el titulo desde JavaScript";
+        // }
+
+        // document.getElementById('titulo').onclick = cambiarTexto;
+
+        // function cambiarTexto() {
+        //     document.getElementById('mostrar').innerHTML = "Nuevo contenido desde JavaScript";
+        // }
+
+        // function entrar() {
+        //     alert("Entramos a la pagina");
+        //     let texto = "";
+        //     if (navigator.cookieEnabled) {
+        //         texto = "Las cookies estan habilitadas";
+        //     } 
+        //     else {
+        //         texto = "Las cookies estan deshabilitadas";
+        //     }
+        //     document.getElementById('mostrar').innerHTML = texto;
+        // }
+
+        // function convertir(nombreInput) {
+        //     nombreInput.value = nombreInput.value.toUpperCase();
+        // }
+
+        // function cambiarColor(elemento) {
+        //     elemento.style.color = "blue";
+        // }
+
+        // function cambiarFuente(elemento) {
+        //     elemento.style.fontFamily = "Arial";
+        // }
+
+        // function verde(elemento) {
+        //     elemento.style.color = "green";
+        // }
+
+        // function cambiar(input) {
+        //     input.style.backgroundColor = "yellow";
+        // }
+
+        // function regresar(input) {
+        //     input.style.backgroundColor = "white";
+        // }
+
+
+        const form = document.getElementById('form');
+
+
+        form.addEventListener('focus', (evento)=> {
+            evento.target.style.backgroundColor = "yellow";
+        }, true);
+        form.addEventListener('blur', (evento)=> {
+            evento.target.style.backgroundColor = "white";
+        }, true);
+
+        // document.getElementById('nombre').addEventListener('focus', (evento)=> {
+        //     evento.target.style.backgroundColor = "yellow";
+        // });
+        // document.getElementById('nombre').addEventListener('blur', (evento)=> {
+        //     evento.target.style.backgroundColor = "white";
+        // });
+
+        // document.getElementById('apellido').addEventListener('focus', cambiar);
+        // document.getElementById('apellido').addEventListener('blur', regresar);
+
+        // function cambiar(evento) {
+        //     let componente = evento.target;
+        //     componente.style.backgroundColor = "yellow";
+        // }
+        // function regresar(evento) {
+        //     evento.target.style.backgroundColor = "white";
+        // } 
+    </script>
+</body>
+</html>
